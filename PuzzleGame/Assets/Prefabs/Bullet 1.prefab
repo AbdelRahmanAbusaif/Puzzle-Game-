@@ -115,7 +115,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!58 &3419416710911055455
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -5132,19 +5132,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2865738559979031259, guid: 6a9220b4fc4db2e478f46989b954f22b, type: 3}
       propertyPath: m_LocalBounds.m_Center.x
-      value: -0.04405
+      value: -0.0783
       objectReference: {fileID: 0}
     - target: {fileID: 2865738559979031259, guid: 6a9220b4fc4db2e478f46989b954f22b, type: 3}
       propertyPath: m_LocalBounds.m_Center.y
-      value: -0.0067999996
+      value: 0.0028499998
       objectReference: {fileID: 0}
     - target: {fileID: 2865738559979031259, guid: 6a9220b4fc4db2e478f46989b954f22b, type: 3}
       propertyPath: m_LocalBounds.m_Extent.x
-      value: 0.20705
+      value: 0.163
       objectReference: {fileID: 0}
     - target: {fileID: 2865738559979031259, guid: 6a9220b4fc4db2e478f46989b954f22b, type: 3}
       propertyPath: m_LocalBounds.m_Extent.y
-      value: 0.101600006
+      value: 0.09285
       objectReference: {fileID: 0}
     - target: {fileID: 2865738559979031259, guid: 6a9220b4fc4db2e478f46989b954f22b, type: 3}
       propertyPath: m_ShapePath.Array.data[0].x

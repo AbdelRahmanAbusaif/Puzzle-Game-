@@ -11,8 +11,8 @@ public class ShootingHandiler : MonoBehaviour
     [SerializeField] private float speedBullet;
     [SerializeField] private float maxCountBullet;
 
-    private float currentBullet;
     private PlayerMovement player;
+    public float currentBullet;
     private void Start()
     {
         player = GetComponent<PlayerMovement>();

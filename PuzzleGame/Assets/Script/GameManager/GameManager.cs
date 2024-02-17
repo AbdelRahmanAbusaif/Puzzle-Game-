@@ -29,7 +29,6 @@ public class GameManager : MonoBehaviour
     {
         Debug.Log("EndGame");
         FindObjectOfType<PlayerMovement>().enabled = false;
-        FindObjectOfType<PlayerMovement>().boxCollider.isTrigger = true;
         Invoke("Restat", 1f);
 
     }

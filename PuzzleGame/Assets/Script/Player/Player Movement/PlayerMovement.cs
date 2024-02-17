@@ -25,7 +25,7 @@ public class PlayerMovement : MonoBehaviour
 
     public Rigidbody2D rb;
     public LayerMask GroundLayer;
-    public BoxCollider2D boxCollider;
+    public Transform GroundChecker;
     public ParticleSystem dustMovement;
 
     //ForJump
@@ -115,8 +115,7 @@ public class PlayerMovement : MonoBehaviour
     }
     private bool isGrounded()
     {
-        RaycastHit2D raycastHit = Physics2D.BoxCast(boxCollider.bounds.center, boxCollider.bounds.size, 0, Vector2.down, 0.01f, GroundLayer);
-        return raycastHit.collider != null;
+        return Physics2D.OverlapCircle(GroundChecker.position, 0.2f, GroundLayer);
     }
 
     private void dustplay() => dustMovement.Play();
