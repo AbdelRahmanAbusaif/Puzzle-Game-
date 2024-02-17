@@ -173,6 +173,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 0}
+  EffectTrasition: {fileID: 1158298964010480803, guid: c505d76f1053af4469b6322020a302c8, type: 3}
 --- !u!1001 &3175917128364404645
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -145,19 +145,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 130517856, guid: 8090f1a40e58c1748bcf73d4a1e20259, type: 3}
       propertyPath: m_LocalBounds.m_Center.x
-      value: -0.0029500127
+      value: -0.0022500157
       objectReference: {fileID: 0}
     - target: {fileID: 130517856, guid: 8090f1a40e58c1748bcf73d4a1e20259, type: 3}
       propertyPath: m_LocalBounds.m_Center.y
-      value: -0.00049996376
+      value: -0.00044995546
       objectReference: {fileID: 0}
     - target: {fileID: 130517856, guid: 8090f1a40e58c1748bcf73d4a1e20259, type: 3}
       propertyPath: m_LocalBounds.m_Extent.x
-      value: 1.1166501
+      value: 1.1156499
       objectReference: {fileID: 0}
     - target: {fileID: 130517856, guid: 8090f1a40e58c1748bcf73d4a1e20259, type: 3}
       propertyPath: m_LocalBounds.m_Extent.y
-      value: 1.1141
+      value: 1.1184499
       objectReference: {fileID: 0}
     - target: {fileID: 849673651880431078, guid: 8090f1a40e58c1748bcf73d4a1e20259, type: 3}
       propertyPath: m_RootOrder
@@ -396,6 +396,10 @@ PrefabInstance:
     - target: {fileID: 4660687209321592621, guid: 7a72caca2abbbfe40b3a23642597ac78, type: 3}
       propertyPath: m_Name
       value: Global Light 2D
+      objectReference: {fileID: 0}
+    - target: {fileID: 4660687209321592622, guid: 7a72caca2abbbfe40b3a23642597ac78, type: 3}
+      propertyPath: m_Intensity
+      value: 0.85
       objectReference: {fileID: 0}
     - target: {fileID: 4660687209321592623, guid: 7a72caca2abbbfe40b3a23642597ac78, type: 3}
       propertyPath: m_LocalPosition.x

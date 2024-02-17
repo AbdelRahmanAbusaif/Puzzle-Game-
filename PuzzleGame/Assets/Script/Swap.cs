@@ -6,6 +6,7 @@ public class Swap : MonoBehaviour
 {
     [Header("Swap")]
     [SerializeField] private GameObject player;
+    [SerializeField] private GameObject EffectTrasition;
 
     private Vector2 vector2;
     private void Start()
@@ -19,6 +20,13 @@ public class Swap : MonoBehaviour
             vector2 = player.transform.position;
             player.transform.position = transform.position;
             transform.position = vector2;
+            RunParticle(transform, player.transform);
         }
+    }
+    private void RunParticle(Transform firstPlace, Transform lastPlace)
+    {
+        GameObject ins1 = Instantiate(EffectTrasition, firstPlace.position, Quaternion.identity);
+        GameObject ins2 = Instantiate(EffectTrasition, lastPlace.position, Quaternion.identity);
+
     }
 }

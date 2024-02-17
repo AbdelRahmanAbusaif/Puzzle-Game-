@@ -19,6 +19,9 @@ public class BulletController : MonoBehaviour
             Debug.Log("PlayParticle");
             particlePlay();
         }
+
+        Physics2D.IgnoreLayerCollision(7, 3);
+        Physics2D.IgnoreLayerCollision(7, 7);
     }
     private void OnCollisionEnter2D(Collision2D collision)
     {
