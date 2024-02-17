@@ -448,10 +448,6 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 6433869857411451094, guid: 505cfb1d529e0824db17cdff317fe161, type: 3}
-      propertyPath: m_RootOrder
-      value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 6433869857411451094, guid: 505cfb1d529e0824db17cdff317fe161, type: 3}
       propertyPath: m_LocalPosition.x
       value: -6.53
       objectReference: {fileID: 0}
@@ -491,10 +487,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 6433869857411451095, guid: 505cfb1d529e0824db17cdff317fe161, type: 3}
-      propertyPath: bulletPrefab
-      value: 
-      objectReference: {fileID: 3419416710911055453, guid: c6b353cdf0a0910489d5ebc030c898c1, type: 3}
     - target: {fileID: 6433869857411451178, guid: 505cfb1d529e0824db17cdff317fe161, type: 3}
       propertyPath: m_Name
       value: Player
