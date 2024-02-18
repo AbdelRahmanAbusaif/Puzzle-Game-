@@ -28,5 +28,15 @@ public class Swap : MonoBehaviour
         GameObject ins1 = Instantiate(EffectTrasition, firstPlace.position, Quaternion.identity);
         GameObject ins2 = Instantiate(EffectTrasition, lastPlace.position, Quaternion.identity);
 
+        StartCoroutine(DeleteEffect(ins1, ins2));
+
+    }
+
+    IEnumerator DeleteEffect(GameObject gameObject, GameObject gameObject1)
+    {
+        yield return new WaitForSeconds(1);
+
+        Destroy(gameObject);
+        Destroy(gameObject1);
     }
 }
