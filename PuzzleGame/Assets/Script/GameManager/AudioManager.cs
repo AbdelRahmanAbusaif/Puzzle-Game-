@@ -19,6 +19,22 @@ public class AudioManager : MonoBehaviour
     public AudioClip ClickSound;
     public AudioClip KeySound;
 
+    public static AudioManager instance;
+    private void Awake()
+    {
+        if (instance == null)
+        {
+            instance = this;
+            DontDestroyOnLoad(this.gameObject);
+        }
+        else
+        {
+            Debug.LogWarning("Duplicate AudioManager instance found. Destroying the duplicate.");
+            SFXAudio = instance.SFXAudio;
+            Destroy(this.gameObject);
+            return;  // Ensure that the method exits after destroying the duplicate
+        }
+    }
     private void Start()
     {
         BackGroundMusic.clip = Music;

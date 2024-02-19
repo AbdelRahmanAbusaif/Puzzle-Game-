@@ -1,10 +1,12 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEditor.Rendering;
 using UnityEngine;
 
 public class Key : MonoBehaviour
 {
+    private AudioManager am;
+    private void Start()
+    {
+        am = FindAnyObjectByType<AudioManager>();
+    }
     public bool IsOpen = false;
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -13,6 +15,8 @@ public class Key : MonoBehaviour
             IsOpen = true;
             transform.position = new Vector3(transform.position.x, transform.position.y - 0.03f, transform.position.z);
             print("IsOpen " + IsOpen);
+
+            am.PlayClip(am.KeySound);
         }
     }
     private void OnTriggerExit2D(Collider2D collision)

@@ -6,9 +6,12 @@ public class SwapObject : MonoBehaviour
     [SerializeField] private GameObject PotalOut;
     [SerializeField] private GameObject EffectTrasition;
 
+    private AudioManager am;
+
     private void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player");
+        am = FindAnyObjectByType<AudioManager>();
     }
     private void OnCollisionEnter2D(Collision2D collision)
     {
@@ -16,6 +19,7 @@ public class SwapObject : MonoBehaviour
         {
             RunParticle(player.transform, PotalOut.transform);
             player.transform.position = PotalOut.transform.position;
+            am.PlayClip(am.TransitionPortalSound);
         }
     }
 
@@ -25,7 +29,6 @@ public class SwapObject : MonoBehaviour
         GameObject ins2 = Instantiate(EffectTrasition, lastPlace.position, Quaternion.identity);
 
         StartCoroutine(DeleteEffect(ins1, ins2));
-
     }
 
     IEnumerator DeleteEffect(GameObject gameObject, GameObject gameObject1)

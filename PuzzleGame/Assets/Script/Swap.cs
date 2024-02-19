@@ -5,18 +5,23 @@ using UnityEngine;
 public class Swap : MonoBehaviour
 {
     [Header("Swap")]
+
     [SerializeField] private GameObject player;
     [SerializeField] private GameObject EffectTrasition;
 
     private Vector2 vector2;
+
+    private AudioManager am;
     private void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player");
+        am = FindAnyObjectByType<AudioManager>();
     }
     void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.CompareTag("Bullet"))
         {
+            am.PlayClip(am.TransitionBoxSound);
             vector2 = player.transform.position;
             player.transform.position = transform.position;
             transform.position = vector2;

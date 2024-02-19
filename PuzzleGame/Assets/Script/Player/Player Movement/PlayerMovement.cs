@@ -28,12 +28,15 @@ public class PlayerMovement : MonoBehaviour
     public Transform GroundChecker;
     public ParticleSystem dustMovement;
 
+    private AudioManager am;
+
     //ForJump
     public Vector2 verGravity;
 
     void Start()
     {
         verGravity = new(0, -Physics2D.gravity.y);
+        am = FindAnyObjectByType<AudioManager>();
     }
     void Update()
     {
@@ -74,6 +77,8 @@ public class PlayerMovement : MonoBehaviour
             isJumping = true;
             jumpCounter = 0;
             dustplay();
+
+            am.PlayClip(am.JupmSound);
         }
 
         if (rb.velocity.y > 0 && isJumping)

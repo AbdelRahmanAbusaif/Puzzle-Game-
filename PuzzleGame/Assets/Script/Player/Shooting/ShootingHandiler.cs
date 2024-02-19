@@ -12,10 +12,14 @@ public class ShootingHandiler : MonoBehaviour
     [SerializeField] private float maxCountBullet;
 
     private PlayerMovement player;
+
+    private AudioManager am;
+
     public float currentBullet;
     private void Start()
     {
         player = GetComponent<PlayerMovement>();
+        am = FindAnyObjectByType<AudioManager>();
         currentBullet = maxCountBullet;
     }
     private void Update()
@@ -24,6 +28,7 @@ public class ShootingHandiler : MonoBehaviour
         {
             shoot();
             currentBullet--;
+            am.PlayClip(am.ShootingSound);
         }
     }
     private void shoot()

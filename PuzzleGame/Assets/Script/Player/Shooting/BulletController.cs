@@ -14,12 +14,6 @@ public class BulletController : MonoBehaviour
     }
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.F))
-        {
-            Debug.Log("PlayParticle");
-            particlePlay();
-        }
-
         Physics2D.IgnoreLayerCollision(7, 3);
         Physics2D.IgnoreLayerCollision(7, 7);
     }
