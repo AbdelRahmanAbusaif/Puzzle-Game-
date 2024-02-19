@@ -113,10 +113,7 @@ public class PlayerMovement : MonoBehaviour
             rb.velocity -= fallMultiplier * Time.deltaTime * verGravity;
         }
     }
-    private bool isGrounded()
-    {
-        return Physics2D.OverlapCircle(GroundChecker.position, 0.2f, GroundLayer);
-    }
+    private bool isGrounded() => Physics2D.OverlapCircle(GroundChecker.position, 0.4f, GroundLayer);
 
     private void dustplay() => dustMovement.Play();
 }
