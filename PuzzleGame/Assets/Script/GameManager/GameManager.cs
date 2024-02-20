@@ -19,11 +19,21 @@ public class GameManager : MonoBehaviour
             Debug.Log("Duplicate GameManager ");
             Destroy(this.gameObject);
         }
+
+
     }
     void Update()
     {
         if (Input.GetKey(KeyCode.R))
+        {
             Restat();
+        }
+
+        if (SceneManager.GetActiveScene().buildIndex == 9)
+        {
+            Destroy(this.gameObject);
+            Destroy(instance);
+        }
     }
     public void EndGame()
     {
