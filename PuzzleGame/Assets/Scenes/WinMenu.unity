@@ -362,7 +362,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Press Alt+F4 to colse im so lazy for doing Quit Button <:'
+  m_text: 'Press Alt+F4 to colse im so lazy for doing Quit Button <:
+
+'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 81fbbebdc71fb9048bcb901a72d420c9, type: 2}
   m_sharedMaterial: {fileID: 4209931716998203237, guid: 81fbbebdc71fb9048bcb901a72d420c9, type: 2}
